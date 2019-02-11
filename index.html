@@ -29,6 +29,7 @@
           <th>Path</th>
           <th>HTTP Verb</th>
           <th>Purpose</th>
+          <th>Mongoose Method</th>
         </tr>
       </thead>
       <tbody>
@@ -37,42 +38,49 @@
           <td>/users</td>
           <td>GET</td>
           <td>List all users</td>
+          <td>User.find()</td>
         </tr>
         <tr class="table-success">
           <td>New</td>
           <td>/users/new</td>
           <td>GET</td>
           <td>Show new user form</td>
+          <td>N/A</td>
         </tr>
         <tr class="table-success">
           <td>Create</td>
           <td>/users</td>
           <td>POST</td>
           <td>Create a new user, then redirect somewhere</td>
+          <td>User.create()</td>
         </tr>
         <tr class="table-primary">
           <td>Show</td>
           <td>/users/:id</td>
           <td>GET</td>
           <td>Show info about one specific user</td>
+          <td>User.findById()</td>
         </tr>
         <tr class="table-warning">
           <td>Edit</td>
           <td>/users/:id/edit</td>
           <td>GET</td>
           <td>Show edit form for one user</td>
+          <td>User.fundById()</td>
         </tr>
         <tr class="table-warning">
           <td>Update</td>
           <td>/users/:id</td>
           <td>PUT</td>
           <td>Update a particular user, then redirect somewhere</td>
+          <td>User.findByIdAndUpdate()</td>
         </tr>
         <tr class="table-danger">
           <td>Destroy</td>
           <td>/users/:id</td>
           <td>DELETE</td>
           <td>Delete a particular user, then redirect somewhere</td>
+          <td>User.findByIdAndRemove()</td>
         </tr>
       </tbody>
     </table>
